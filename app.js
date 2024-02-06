@@ -5,7 +5,7 @@ const batchTransactionSchema = new mongoose.Schema({
   recipients: { type: [String], required: true },
   amounts: { type: [Number], required: true },
   releaseDates: { type: [Number], required: true },
-  transactionTypes: { type: [Number], required: true }
+  transactionTypes: { type: [Number], required: true ,  default:56}
 });
 
 const BatchTransaction = mongoose.model('BatchTransaction', batchTransactionSchema);
